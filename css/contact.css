@@ -1,0 +1,41 @@
+.contact-box {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* canh giữa các cột */
+  gap: 60px; /* giãn khoảng cách giữa các cột */
+  font-family: Arial, sans-serif;
+  text-align: center; /* canh giữa nội dung trong cột */
+}
+
+.contact-col {
+  flex: 1 1 400px;
+  max-width: 450px;
+}
+
+.contact-col h3 {
+  margin-bottom: 10px;
+  color: #e02027;
+  font-size: 18px;
+}
+
+.contact-col p {
+  margin: 5px 0;
+}
+
+.contact-col i {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 24px;
+  color: #333;
+}
