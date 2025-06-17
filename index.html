@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KTV Shop</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/63f222efa2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="slogan-horizontal">
+  <span class="brand-name">LAPTOP KTV</span>
+  <span><i class="fa-solid fa-bolt"></i> Khơi nguồn công nghệ</span>
+  <span><i class="fa-solid fa-sliders"></i> Tối ưu hiệu suất</span>
+  <span><i class="fa-solid fa-shield-halved"></i> Vững vàng tương lai</span>
+</div>
+    <!--HEADER -->
+    <header>
+      <div class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./frontend/thong_tin.html"><i class="fa-solid fa-circle-info"></i></i>Thông tin</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#"><i class="fa-solid fa-wallet"></i>Trả góp</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fa-solid fa-money-bill"></i>Bảng giá</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"
+              ><i class="fa-solid fa-shield"></i>Chính sách bảo hành</a
+            >
+          </li>
+          <li class="nav-item hotline">
+            <a href="./frontend/contact.html"><i class="fa-solid fa-phone"></i>Liên hệ</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./img/logo4.png" alt="STAR" /></a>
+        </div>
+
+            <div class="menu-dropdown">
+        <button class="menu-btn">
+          <i class="fas fa-bars"></i> Danh mục sản phẩm
+        </button>
+        <div class="dropdown-content">
+          <a href="./frontend/sp1.html">Sản phẩm 1</a>
+          <a href="./frontend/sp2.html">Sản phẩm 2</a>
+          <a href="./frontend/sp3.html">Sản phẩm 3</a>
+        </div>
+      </div>
+
+        <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Bạn tìm gì..." />
+        <button class="search-btn" id="searchBtn">
+          <i class="fas fa-search"></i> Tìm kiếm
+          </button>
+        </div>
+
+
+        <div class="nav-right">
+          <a href="./frontend/login.html"><i class="fa-solid fa-user"></i></a>
+          <a href="./frontend/cart.html" id="cartLink">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- NỘI DUNG -->
+
+    <!-- Hero Slideshow -->
+    <section class="hero">
+      <!-- Hero Slider Container -->
+      <section class="hero">
+        <div class="slider-container">
+          <div id="slider" class="slider">
+            <!-- Slide 1 -->
+            <div class="slide">
+              <img src="img/banner1.webp" alt="Slide 1" />
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+              <img src="./img/banner2.jpg" alt="Slide 2" />
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+              <img src="./img/banner3.webp" alt="Slide 3" />
+            </div>
+            <!-- Slide 4 -->
+            <div class="slide">
+              <img src="./img/banner41.webp" alt="Slide 4" />
+            </div>
+          </div>
+          <!-- Nút điều khiển -->
+          <button id="prevBtn" class="slider-btn prev-btn">‹</button>
+          <button id="nextBtn" class="slider-btn next-btn">›</button>
+        </div>
+      </section>
+    </section>
+
+    <!-- Banner quảng cáo -->
+    <div class="wrapper">
+      <img src="./img/wrapper1.webp" alt="banner 1" />
+      <img src="./img/wrapper2.webp" alt="banner 2" />
+      <img src="./img/wrapper3.webp" alt="banner 3" />
+      <img src="./img/wrapper4.webp" alt="banner 4" />
+    </div>
+
+    <!-- Sản phẩm -->
+    <a href="./frontend/sp1.html" class="product-link">
+        <div class="product-wrapper">
+          <div class="product-box">
+            <div class="discount-badge">Giảm 15%</div>
+            <img src="./img/laptop1/anh1.webp" alt="iPhone 16" class="product-img" />
+            <h3 class="product-name">
+              Laptop Asus TUF Gaming A15 FA507NVR-LP091W (Ryzen 7 7435HS/ GeForce RTX™ 4060/ 16GB/ 512GB/ Windows 11 Home)
+            </h3>
+            <div class="price">
+              <span class="price-new">25.990.000đ</span>
+              <span class="price-old">29.490.000đ</span>
+            </div>
+            <div class="member-discount">
+              Vmember giảm thêm đến <strong>305.000đ</strong>
+            </div>
+            <div class="shipping-info">
+              Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3–6 tháng
+            </div>
+            <div class="rating">
+              ⭐⭐⭐⭐⭐ <span class="wishlist">Yêu thích ♥</span>
+            </div>
+          </div>
+    </a>
+
+      <!-- Box 2 -->
+      <a href="./frontend/sp2.html" class="product-link">
+        <div class="product-box">
+          <div class="discount-badge">Giảm 10%</div>
+          <img src="./img/laptop2/anh1.webp" alt="Galaxy S25" class="product-img" />
+          <h3 class="product-name">Laptop Msi Modern 15 B13M-438VN (i5-1335U/ Onboard graphics/ 8GB/ 512GB/ Windows 11)</h3>
+          <div class="price">
+            <span class="price-new">11.990.000đ</span>
+            <span class="price-old">18.490.000</span>
+          </div>
+          <div class="member-discount">
+            Vmember giảm thêm đến <strong>197.000đ</strong>
+          </div>
+          <div class="shipping-info">
+            Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3–6 tháng
+          </div>
+          <div class="rating">
+            ⭐⭐⭐⭐⭐ <span class="wishlist">Yêu thích ♥</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Box 3 -->
+       <a href="./frontend/sp3.html" class="product-link">
+         <div class="product-box">
+        <div class="discount-badge">Giảm 20%</div>
+        <img src="./img/laptop3/anh1.webp" alt="Xiaomi 14T" class="product-img" />
+        <h3 class="product-name">Laptop Acer Nitro 5 Tiger AN515-58-52SP (NH.QFHSV.001) (i5-12500H/ GeForce RTX™ 3050/ 8GB/ 512GB/ Windows 11)</h3>
+        <div class="price">
+          <span class="price-new">17.990.000đ</span>
+          <span class="price-old">29.490.000đ</span>
+        </div>
+        <div class="member-discount">
+          Vmember giảm thêm đến <strong>169.900đ</strong>
+        </div>
+        <div class="shipping-info">
+          Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3–6 tháng 
+        </div>
+        <div class="rating">
+          ⭐⭐⭐⭐⭐ <span class="wishlist">Yêu thích ♥</span>
+        </div>
+      </div>
+       </a>
+     
+
+      <!-- Box 4 -->
+        <div class="product-box">
+          <div class="discount-badge">Giảm 20%</div>
+          <img
+            src="./img/laptop4/anh1.webp"
+            alt="Galaxy S25 Ultra"
+            class="product-img"
+          />
+          <h3 class="product-name">Laptop Asus Gaming K16 K3607VJ-RP131W (Core 5 210H/ GeForce RTX™ 3050/ 32GB/ 512GB/ Windows 11)</h3>
+          <div class="price">
+            <span class="price-new">22.990.000đ</span>
+            <span class="price-old">24.990.000đ</span>
+          </div>
+          <div class="member-discount">
+            Vmember giảm thêm đến <strong>147.000đ</strong>
+          </div>
+          <div class="shipping-info">
+            Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3–6 tháng 
+          </div>
+          <div class="rating">
+            ⭐⭐⭐⭐⭐ <span class="wishlist">Yêu thích ♥</span>
+          </div>
+        </div>
+       <!-- Box 5 -->
+      <div class="product-box">
+        <div class="discount-badge">Giảm 10%</div>
+        <img
+          src="./img/laptop5/anh1.webp"
+          alt="Galaxy S25 Ultra"
+          class="product-img"
+        />
+        <h3 class="product-name">Laptop Lenovo LOQ 15IAX9 - 83GS004BVN (i5-12450HX/ GeForce RTX™ 3050/ 12GB/ 512GB/ Windows 11)</h3>
+        <div class="price">
+          <span class="price-new">19.990.000đ</span>
+          <span class="price-old">24.490.000đ</span>
+        </div>
+        <div class="member-discount">
+          Vmember giảm thêm đến <strong>289.000đ</strong>
+        </div>
+        <div class="shipping-info">
+          Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3–6 tháng 
+        </div>
+        <div class="rating">
+          ⭐⭐⭐⭐⭐ <span class="wishlist">Yêu thích ♥</span>
+        </div>
+      </div>
+       <!-- Box 6 -->
+      <div class="product-box">
+        <div class="discount-badge">Giảm 15%</div>
+        <img
+          src="./img/laptop6/anh1.webp"
+          alt="Galaxy S25 Ultra"
+          class="product-img"
+        />
+        <h3 class="product-name">Laptop Acer Nitro V 15 ProPanel ANV15-51-56D5 (i5-13420H/ GeForce RTX™ 3050/ 16GB/ 512GB/ Windows 11)</h3>
+        <div class="price">
+          <span class="price-new">28.490.000đ</span>
+          <span class="price-old">33.990.000đ</span>
+        </div>
+        <div class="member-discount">
+          Vmember giảm thêm đến <strong>159.000đ</strong>
+        </div>
+        <div class="shipping-info">
+          Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3–6 tháng 
+        </div>
+        <div class="rating">
+          ⭐⭐⭐⭐⭐ <span class="wishlist">Yêu thích ♥</span>
+        </div>
+      </div>
+       <!-- Box 7 -->
+      <div class="product-box">
+        <div class="discount-badge">Giảm 15%</div>
+        <img
+          src="./img/laptop7/anh1.webp"
+          alt="Galaxy S25 Ultra"
+          class="product-img"
+        />
+        <h3 class="product-name">Laptop Asus Gaming VivoBook K3605ZF-RP634W (i5-12500H/ GeForce RTX™ 2050/ 16GB/ 512GB/ Windows 11) </h3>
+        <div class="price">
+          <span class="price-new">16.490.000đ</span>
+          <span class="price-old">19.490.000đ</span>
+        </div>
+        <div class="member-discount">
+          Vmember giảm thêm đến <strong>299.000đ</strong>
+        </div>
+        <div class="shipping-info">
+          Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3–6 tháng 
+        </div>
+        <div class="rating">
+          ⭐⭐⭐⭐⭐ <span class="wishlist">Yêu thích ♥</span>
+        </div>
+      </div>
+       <!-- Box 8 -->
+      <div class="product-box">
+        <div class="discount-badge">Giảm 15%</div>
+        <img
+          src="./img/laptop8/anh1.webp"
+          alt="Galaxy S25 Ultra"
+          class="product-img"
+        />
+        <h3 class="product-name">Laptop Acer Aspire 5 A514-56P-35X7 (NX.KHRSV.001) (i3-1315U/ Onboard graphics/ 8GB/ 512GB/ Windows 11)</h3>
+        <div class="price">
+          <span class="price-new">9.990.000đ</span>
+          <span class="price-old">12.990.000đ</span>
+        </div>
+        <div class="member-discount">
+          Vmember giảm thêm đến <strong>99.000đ</strong>
+        </div>
+        <div class="shipping-info">
+          Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3–6 tháng 
+        </div>
+        <div class="rating">
+          ⭐⭐⭐⭐⭐ <span class="wishlist">Yêu thích ♥</span>
+        </div>
+      </div>
+       <!-- Box 9 -->
+      <div class="product-box">
+        <div class="discount-badge">Giảm 15%</div>
+        <img
+          src="./img/laptop9/anh1.webp"
+          alt="Galaxy S25 Ultra"
+          class="product-img"
+        />
+        <h3 class="product-name">Laptop Msi Prestige 13 AI Evo A1MG-062VN (Ultra 7-155H/ Onboard graphics/ 32GB/ 1TB/ Windows 11)</h3>
+        <div class="price">
+          <span class="price-new">32.390.000đ</span>
+          <span class="price-old">33.990.000đ</span>
+        </div>
+        <div class="member-discount">
+          Vmember giảm thêm đến <strong>199.000đ</strong>
+        </div>
+        <div class="shipping-info">
+          Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3–6 tháng 
+        </div>
+        <div class="rating">
+          ⭐⭐⭐⭐⭐ <span class="wishlist">Yêu thích ♥</span>
+        </div>
+      </div>
+       <!-- Box 10-->
+      <div class="product-box">
+        <div class="discount-badge">Giảm 10%</div>
+        <img
+          src="./img/laptop10/anh1.webp"
+          alt="Galaxy S25 Ultra"
+          class="product-img"
+        />
+        <h3 class="product-name">Laptop HP Victus 16-s0078AX - 8C5N7PA (Ryzen 5 7640HS/ GeForce RTX™ 3050/ 16GB/ 512GB/ Windows 11)</h3>
+        <div class="price">
+          <span class="price-new">19.690.000đ</span>
+          <span class="price-old">27.390.000đ</span>
+        </div>
+        <div class="member-discount">
+          Vmember giảm thêm đến <strong>215.000đ</strong>
+        </div>
+        <div class="shipping-info">
+          Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3–6 tháng 
+        </div>
+        <div class="rating">
+          ⭐⭐⭐⭐⭐ <span class="wishlist">Yêu thích ♥</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Giỏ hàng -->
+ <div class="cart-dropzone" id="cartDrop">
+  <h2>Tham khảo giá</h2>
+  <ul id="cartList"></ul>
+  <div id="cartTotal">Tổng tiền: 0đ</div>
+</div>
+
+<!-- Popup thanh toán -->
+<div id="successPopup" class="popup hidden">
+  <div class="popup-content">
+    <h3>✨ Đã thanh toán thành công!</h3>
+    <p>Cảm ơn bạn đã mua sắm tại KTV Shop ❤ (Đùa thôi 😄)"
+    </p>
+    <button id="closePopup">OK</button>
+  </div>
+</div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <!-- Top icons row -->
+      <div class="footer-icons">
+        <div class="item">
+          <i class="fas fa-truck"></i>
+          <span class="title">CHÍNH SÁCH GIAO HÀNG</span>
+          <small>Nhận hàng và thanh toán tại nhà</small>
+        </div>
+        <div class="item">
+          <i class="fas fa-sync-alt"></i>
+          <span class="title">ĐỔI TRẢ DỄ DÀNG</span>
+          <small>1 đổi 1 trong 7 ngày</small>
+        </div>
+        <div class="item">
+          <i class="fas fa-tags"></i>
+          <span class="title">GIÁ LUÔN RẺ NHẤT</span>
+          <small>Giá cả hợp lý, nhiều ưu đãi tốt</small>
+        </div>
+        <div class="item">
+          <i class="fas fa-headset"></i>
+          <span class="title">HỖ TRỢ NHIỆT TÌNH</span>
+          <small>Tư vấn, giải đáp mọi thắc mắc</small>
+        </div>
+      </div>
+
+      <div class="footer-content">
+        <div>
+          <h4>GIỚI THIỆU</h4>
+          <ul>
+            <li><a href="#">Về chúng tôi</a></li>
+            <li><a href="#">Tư vấn mua hàng</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+          </ul>
+          <div class="social">
+            <a href="https://www.facebook.com/cnttFpolyDongNai" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/shorts/nNK4jmekiQE" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@lukman.juventino/video/7466604604218805510?q=html%2C%20css&t=1749998263276" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.w3schools.com/html/html_css.asp" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>CHÍNH SÁCH CHUNG</h4>
+          <ul>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách giao nhận, kiểm hàng</a></li>
+            <li><a href="#">Chính sách trả góp</a></li>
+            <li><a href="#">Chính sách thanh toán</a></li>
+            <li><a href="#">Chính sách giải quyết khiếu nại</a></li>
+            <li><a href="#">Chính sách bảo vệ thông tin cá nhân</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách đổi - trả hàng</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>THÔNG TIN KHUYẾN MÃI</h4>
+          <ul>
+            <li><a href="#">Tổng hợp khuyến mãi</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+          <ul>
+            <li><a href="tel:0931889888">CSKH: 0931 889 888</a></li>
+            <li><a href="#">Tổng hợp hotline, phản ánh</a></li>
+            <li><a href="#">Lắp đặt phòng net</a></li>
+            <li><a href="#">Thiết bị Mining</a></li>
+            <li><a href="#">Tra cứu bảo hành</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="./js/slide.js"></script>
+    <script src="./js/dragdrop.js"></script>
+    <script src="./js/searchbox.js"></script>
+    <script src="./js/cart.js"></script>
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/684fb40db28b01190c4fddf1/1itrlelh9';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+<script>
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+
+  // Khi người dùng thu nhỏ cửa sổ chat
+  Tawk_API.onChatEnded = function() {
+  resetChatSession();
+};
+
+  function resetChatSession() {
+  if (typeof Tawk_API.endChat === 'function') {
+    Tawk_API.endChat();
+  }
+
+  // Xóa session và cookies nhẹ nhàng, KHÔNG reload
+  setTimeout(function () {
+    localStorage.removeItem('tawkUUID'); // Chỉ xóa ID session của Tawk.to
+    sessionStorage.clear();
+  }, 500);
+}
+</script>
+  </body>
+</html>

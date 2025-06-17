@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4091c0430f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="slogan-horizontal">
+  <span class="brand-name">LAPTOP KTV</span>
+  <span><i class="fa-solid fa-bolt"></i> Khơi nguồn công nghệ</span>
+  <span><i class="fa-solid fa-sliders"></i> Tối ưu hiệu suất</span>
+  <span><i class="fa-solid fa-shield-halved"></i> Vững vàng tương lai</span>
+</div>
+   <!--HEADER -->
+    <header>
+      <div class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="./thong_tin.html"><i class="fa-solid fa-circle-info"></i></i>Thông tin</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#"><i class="fa-solid fa-wallet"></i>Trả góp</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fa-solid fa-money-bill"></i>Bảng giá</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"
+              ><i class="fa-solid fa-shield"></i>Chính sách bảo hành</a
+            >
+          </li>
+          <li class="nav-item hotline">
+            <a href="./contact.html"><i class="fa-solid fa-phone"></i>Liên hệ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="logo">
+          <a href="../index.html"><img src="../img/logo4.png" alt="STAR" /></a>
+        </div>
+
+        <div class="menu-dropdown">
+          <button class="menu-btn">
+            <i class="fas fa-bars"></i> Danh mục sản phẩm
+          </button>
+          <div class="dropdown-content">
+            <a href="./sp1.html">Sản phẩm 1</a>
+            <a href="./sp2.html">Sản phẩm 2</a>
+            <a href="./sp3.html">Sản phẩm 3</a>
+          </div>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Bạn tìm gì..." />
+            <button class="search-btn" id="searchBtn">
+              <i class="fas fa-search"></i> Tìm kiếm
+            </button>
+          </div>
+
+
+        <div class="nav-right">
+          <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+          <a href="#" id="cartLink">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+  <div class="page-container">
+    <h1 style="text-align: center; margin: 20px 0; font-weight: 700; font-size: 28px;">
+      GIỎ HÀNG CỦA BẠN
+    </h1>
+    <div class="cart-container">
+      <div id="cart-items"></div>  
+
+      <div id="total-price" style="text-align: right; font-weight: bold; margin-top: 20px; font-size: 18px;">
+        Tổng cộng: 0 VND
+      </div> 
+    </div>
+  </div>
+</main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <!-- Top icons row -->
+      <div class="footer-icons">
+        <div class="item">
+          <i class="fas fa-truck"></i>
+          <span class="title">CHÍNH SÁCH GIAO HÀNG</span>
+          <small>Nhận hàng và thanh toán tại nhà</small>
+        </div>
+        <div class="item">
+          <i class="fas fa-sync-alt"></i>
+          <span class="title">ĐỔI TRẢ DỄ DÀNG</span>
+          <small>1 đổi 1 trong 7 ngày</small>
+        </div>
+        <div class="item">
+          <i class="fas fa-tags"></i>
+          <span class="title">GIÁ LUÔN RẺ NHẤT</span>
+          <small>Giá cả hợp lý, nhiều ưu đãi tốt</small>
+        </div>
+        <div class="item">
+          <i class="fas fa-headset"></i>
+          <span class="title">HỖ TRỢ NHIỆT TÌNH</span>
+          <small>Tư vấn, giải đáp mọi thắc mắc</small>
+        </div>
+      </div>
+
+      <div class="footer-content">
+        <div>
+          <h4>GIỚI THIỆU</h4>
+          <ul>
+            <li><a href="#">Về chúng tôi</a></li>
+            <li><a href="#">Tư vấn mua hàng</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+          </ul>
+          <div class="social">
+            <a href="https://www.facebook.com/cnttFpolyDongNai" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/shorts/nNK4jmekiQE" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@lukman.juventino/video/7466604604218805510?q=html%2C%20css&t=1749998263276" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.w3schools.com/html/html_css.asp" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>CHÍNH SÁCH CHUNG</h4>
+          <ul>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Chính sách giao nhận, kiểm hàng</a></li>
+            <li><a href="#">Chính sách trả góp</a></li>
+            <li><a href="#">Chính sách thanh toán</a></li>
+            <li><a href="#">Chính sách giải quyết khiếu nại</a></li>
+            <li><a href="#">Chính sách bảo vệ thông tin cá nhân</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+            <li><a href="#">Chính sách đổi - trả hàng</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>THÔNG TIN KHUYẾN MÃI</h4>
+          <ul>
+            <li><a href="#">Tổng hợp khuyến mãi</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+          <ul>
+            <li><a href="tel:0931889888">CSKH: 0931 889 888</a></li>
+            <li><a href="#">Tổng hợp hotline, phản ánh</a></li>
+            <li><a href="#">Lắp đặt phòng net</a></li>
+            <li><a href="#">Thiết bị Mining</a></li>
+            <li><a href="#">Tra cứu bảo hành</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/cart.js"></script>
+    <script src="../js/muahang.js"></script>
+    <script src="../js/searchbox.js"></script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/684fb40db28b01190c4fddf1/1itrlelh9';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+<script>
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+
+  // Khi người dùng thu nhỏ cửa sổ chat
+  Tawk_API.onChatEnded = function() {
+  resetChatSession();
+};
+
+  function resetChatSession() {
+  if (typeof Tawk_API.endChat === 'function') {
+    Tawk_API.endChat();
+  }
+
+  // Xóa session và cookies nhẹ nhàng, KHÔNG reload
+  setTimeout(function () {
+    localStorage.removeItem('tawkUUID'); // Chỉ xóa ID session của Tawk.to
+    sessionStorage.clear();
+  }, 500);
+}
+</script>
+  </body>
+</html>
